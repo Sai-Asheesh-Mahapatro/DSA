@@ -20,5 +20,6 @@ class CountDigitsInANumber{
         int n = sc.nextInt();
         System.out.println("input is:"+ n);
         System.out.println(countDigits2(n));
+        sc.close();
     }
 }
