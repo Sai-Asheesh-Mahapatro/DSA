@@ -10,11 +10,15 @@ class CountDigitsInANumber{
         }  
         return count;
     }
+
+    public static int countDigits2(int n){
+        return (int)Math.log10(n)+1;
+    }
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number:");
         int n = sc.nextInt();
         System.out.println("input is:"+ n);
-        System.out.println(countDigits(n));
+        System.out.println(countDigits2(n));
     }
 }
